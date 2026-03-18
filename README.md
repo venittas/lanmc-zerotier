@@ -2,7 +2,19 @@
 A zero-tier one guide to remote Minecraft LAN connection 
 
 ## Pre-requisites
-- Java (use openJDK, because open)
+- Java (use openJDK, because open) | [Windows](https://download.java.net/java/GA/jdk26/c3cc523845074aa0af4f5e1e1ed4151d/35/GPL/openjdk-26_windows-x64_bin.zip)
+
+For Windows:
+- Download the file linked above
+- Extract it to a directory (preferrably inside the User folder)
+- Put the `/bin` directory to PATH
+
+To put the `/bin` directory to PATH:
+1. Open environment variables (search `environment variables` in Windows Search)
+2. Click `Environment variables...`
+3. Click Path under `User variables for ___`
+4. Click `Browse...` and select the `/bin` directory inside the extracted openJDK
+
 - Minecraft (preferrably, cracked)
 - ZeroTier One | [Windows](https://download.zerotier.com/dist/ZeroTier%20One.msi)
 
@@ -25,9 +37,12 @@ For Host:
 2. Copy the Network ID and distribute to the members
 
 For Members and Host:
-Windows:
-Copy the Network ID and join network through the ZeroTier One taskbar icon (right click and click 'Join Network')
-Linux:
+
+For Windows:
+
+Copy the Network ID and join network through the ZeroTier One taskbar icon (right click and click `Join Network`)
+
+For Linux:
 ```bash
 sudo zerotier-cli join [Network ID]
 ```
