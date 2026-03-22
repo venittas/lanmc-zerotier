@@ -66,13 +66,13 @@ Terminal for Windows PowerShell:
   3. Save the file inside the directory and rename to `server.jar` (optional, whatever works for you)
 
 After downloading the file, run it with:
-     ```bash
-      java -Xmx4G -Xms4G -jar server.jar nogui
-     ```
 
-> [!NOTE] Command-line parameters
+```bash
+java -Xmx4G -Xms4G -jar server.jar nogui
+```
+
+> [!NOTE]
 > The `-Xmx4G` and `-Xms4G` are indicators for Java's memory usage; initial heap (memory) and maximum heap (memory) size, respectively
->
 > The command above tells Java to run it with 4gb of RAM
   
 After the command finishes, open the `eula.txt` file generated and find the line `eula=false` and change the value to `true`. 
