@@ -50,7 +50,8 @@ sudo zerotier-cli join [Network ID]
 3. Setup Minecraft server (For Host)
 
 Download the official Minecraft server
-  Terminal for Windows PowerShell:
+
+Terminal for Windows PowerShell:
 - If `wget` is not yet installed:
       ```powershell
         Invoke-WebRequest -Uri "https://eternallybored.org/misc/wget/1.21.1/64/wget.exe" -OutFile "C:\Program Files (x86)\GnuWin32\bin\wget.exe"
@@ -69,10 +70,10 @@ After downloading the file, run it with:
       java -Xmx4G -Xms4G -jar server.jar nogui
      ```
 
-  > [!NOTE] Command-line parameters
-  > The `-Xmx4G` and `-Xms4G` are indicators for Java's memory usage; initial heap (memory) and maximum heap (memory) size, respectively
-  >
-  > The command above tells Java to run it with 4gb of RAM
+> [!NOTE] Command-line parameters
+> The `-Xmx4G` and `-Xms4G` are indicators for Java's memory usage; initial heap (memory) and maximum heap (memory) size, respectively
+>
+> The command above tells Java to run it with 4gb of RAM
   
 After the command finishes, open the `eula.txt` file generated and find the line `eula=false` and change the value to `true`. 
 Afterwards, run the command above once again and wait for it to finish. Once finished, open the `server.properties` file and find the line `online-mode=true` and change the value to `false` (for cracked Minecraft support). Next, find the line `server-ip` and put your IP Address from ZeroTier One (the ZT one) as the value. Save the file and run the command once again.
